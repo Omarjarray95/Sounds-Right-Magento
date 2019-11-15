@@ -5,6 +5,7 @@
             <version>1.0.0</version>
         </esprit_livraison>
     </module>
+
     <frontend>
         <routers>
             <esprit_livraison>
@@ -15,5 +16,34 @@
                 </args>
             </esprit_livraison>
         </routers>
+        <layout>
+            <updates>
+                <esprit_livraison>
+                    <file>esprit_livraison.xml</file>
+                </esprit_livraison>
+            </updates>
+        </layout>
     </frontend>
+
+    <global>
+        <blocks>
+            <esprit_livraison>
+                <class>Esprit_Livraison_Block</class>
+            </esprit_livraison>
+        </blocks>
+        <models>
+            <esprit_livraison>
+                <class>Esprit_Livraison_Model</class>
+                <resourceModel>esprit_livraison_resource</resourceModel>
+            </esprit_livraison>
+            <esprit_livraison_resource>
+                <class>Esprit_Livraison_Model_Resource</class>
+                <entities>
+                    <commande>
+                        <table>esprit_livraison_commande</table>
+                    </commande>
+                </entities>
+            </esprit_livraison_resource>
+        </models>
+    </global>
 </config>

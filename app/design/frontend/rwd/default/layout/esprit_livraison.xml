@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <esprit_livraison_index_index>
+        <reference name="content">
+            <block type="esprit_livraison/form" name="esprit_livraison_form" template="esprit/livraison/form.phtml" />
+        </reference>
+    </esprit_livraison_index_index>
+</layout>
