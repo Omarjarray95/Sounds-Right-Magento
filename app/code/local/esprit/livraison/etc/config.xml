@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <module>
+        <esprit_livraison>
+            <version>1.0.0</version>
+        </esprit_livraison>
+    </module>
+    <frontend>
+        <routers>
+            <esprit_livraison>
+                <use>standard</use>
+                <args>
+                    <module>esprit_livraison</module>
+                    <frontName>livraison</frontName>
+                </args>
+            </esprit_livraison>
+        </routers>
+    </frontend>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <esprit_livraison>
+            <active>true</active>
+            <codePool>local</codePool>
+        </esprit_livraison>
+    </modules>
+</config>
