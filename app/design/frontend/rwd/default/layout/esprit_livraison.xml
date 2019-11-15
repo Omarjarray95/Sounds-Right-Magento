@@ -5,4 +5,14 @@
             <block type="esprit_livraison/form" name="esprit_livraison_form" template="esprit/livraison/form.phtml" />
         </reference>
     </esprit_livraison_index_index>
+    <esprit_livraison_index_list>
+        <reference name="content">
+            <block type="esprit_livraison/list" name="esprit_livraison_list" template="esprit/livraison/list.phtml" />
+        </reference>
+    </esprit_livraison_index_list>
+    <esprit_livraison_index_edit>
+        <reference name="content">
+            <block type="esprit_livraison/edit" name="esprit_livraison_edit" template="esprit/livraison/edit.phtml" />
+        </reference>
+    </esprit_livraison_index_edit>
 </layout>

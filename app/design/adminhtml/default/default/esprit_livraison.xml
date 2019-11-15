@@ -1,0 +1,5 @@
+<adminhtml_esprit_livraison_edit>
+    <reference name="content">
+        <block type="esprit_livraison_adminhtml/edit" template="esprit/livraison/edit.phtml"></block>
+    </reference>
+</adminhtml_esprit_livraison_edit>

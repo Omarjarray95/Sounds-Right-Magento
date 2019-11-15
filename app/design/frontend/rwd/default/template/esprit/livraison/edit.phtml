@@ -1,0 +1,43 @@
+<?php 
+    $commande = $this->getCommande();
+    $id = $this->getRequest()->getParam('id');
+?>
+
+<h1>Modification des Infos de Commande <?php echo $this->getRequest()->getParam('id'); ?></h1>
+
+<form action="<?php echo $this->getEditSaveUrl($id)?>" method="post">
+<?php echo $this->getBlockHtml('formkey'); ?>
+    <table>
+        <tr>
+            <td>
+                <label for="">Nom & Prénom du Client: </label>
+            </td>
+            <td>
+                <input type="text" name="nom" value="<?php echo $commande->getNom(); ?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Date de Livraison: </label>
+            </td>
+            <td>
+                <input type="date" name="date" value="<?php echo $commande->getDate(); ?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Produit Livré: </label>
+            </td>
+            <td>
+                <input type="text" name="produit" value="<?php echo $commande->getProduit(); ?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+            </td>
+            <td>
+                <input type="submit" value="Modifier"/>
+            </td>
+        </tr>
+    <table>

@@ -3,7 +3,7 @@
     {
         protected function _construct()
         {
-            $this->_init('esprit_livraison/commande', 'id')
+            $this->_init('esprit_livraison/commande', 'id');
         }
     }
 ?>

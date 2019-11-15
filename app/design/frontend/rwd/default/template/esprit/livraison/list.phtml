@@ -1,0 +1,12 @@
+Commandes Effectuées:
+
+<ul>
+    <?php
+        $commandes = $this->getCommandeCollection();
+        foreach ($commandes as $commande) { ?>
+            <li><?php echo $commande->getNom() ?> | <?php echo $commande->getDate() ?> | <?php echo $commande->getProduit() ?> 
+            | <a href="<?php echo $this->getEditUrl($commande->getId()) ?>">Modifier</a></li>
+            | <a href="<?php echo $this->getDeleteUrl($commande->getId()) ?>">Supprimer</a></li>
+        <?php }
+    ?>
+</ul>
